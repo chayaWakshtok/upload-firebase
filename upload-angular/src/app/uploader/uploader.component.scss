@@ -1,0 +1,24 @@
+.panel {
+    position: fixed;
+    bottom: 0;
+    width: 45%;
+    left: 54vw;
+    background-color: white;
+    .panel-heading {
+        background: black;
+        color: white;
+    }
+    .mat-icon {
+        float: right;
+        cursor: pointer;
+    }
+}
+
+.display-none {
+    display: none;
+}
+.display-block {
+    display: block;
+    overflow-y: scroll;
+    max-height: 553px;
+}

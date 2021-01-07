@@ -14,3 +14,16 @@
         </label>
     </div>
 </div>
+
+<div class="panel panel-default" *ngIf="files.length&&!isClose">
+    <div class="panel-heading">
+        upload {{files.length}} items
+        <mat-icon (click)="close()"> close </mat-icon>
+        <mat-icon (click)="expandLess=!expandLess">{{expandLess?'expand_less':'expand_more'}}</mat-icon>
+    </div>
+    <div class="panel-body" [ngClass]="{'display-none':expandLess,'display-block':!expandLess}">
+        <ng-container *ngFor="let file of files">
+
+        </ng-container>
+    </div>
+</div>
