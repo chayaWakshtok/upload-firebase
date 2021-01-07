@@ -23,7 +23,7 @@
     </div>
     <div class="panel-body" [ngClass]="{'display-none':expandLess,'display-block':!expandLess}">
         <ng-container *ngFor="let file of files">
-
+            <app-upload-task [isCloseAll]="isClose" [file]="file"></app-upload-task>
         </ng-container>
     </div>
 </div>

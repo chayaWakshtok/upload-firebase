@@ -12,9 +12,11 @@ export class UploaderComponent implements OnInit {
   isClose: boolean = true;
   expandLess: boolean = false;
 
-  constructor() { }
+  constructor(
+  ) { }
 
   ngOnInit(): void {
+
   }
 
   uploadImage(event: any) {
